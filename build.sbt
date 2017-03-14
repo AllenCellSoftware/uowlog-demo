@@ -20,7 +20,11 @@ libraryDependencies += "com.typesafe.akka" %% "akka-remote"  % "2.4.14"
 libraryDependencies += "com.typesafe.akka" %% "akka-slf4j"   % "2.4.14"
 libraryDependencies += "com.typesafe.akka" %% "akka-testkit" % "2.4.14"
 
-libraryDependencies += "org.uowlog" %% "uowlog" % "[1.0,1.1["
+libraryDependencies += "org.uowlog" %% "uowlog"         % "[1.0,1.1["
+libraryDependencies += "org.uowlog" %% "uowlog-http"    % "[1.0,1.1["
+libraryDependencies += "org.uowlog" %% "uowlog-testkit" % "[1.0,1.1[" % "test"
+
+libraryDependencies += "org.scala-lang.modules" %% "scala-xml" % "1.0.6"
 
 fork := true
 fork in (Test,run) := true
